@@ -35,9 +35,11 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     position: sticky;
-    text-align: center;
-    padding-left: 650px;
+    top: 0;
+    width: 100%;
 }
 
 .navigation li {
@@ -228,6 +230,7 @@ form .button input:hover {
     .user-details::-webkit-scrollbar {
         width: 5px;
     }
+    
 }
 
 @media (max-width: 459px) {
@@ -235,6 +238,7 @@ form .button input:hover {
         flex-direction: column;
     }
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -252,7 +256,7 @@ h1 {
 
 .task-test {
     padding: 10px;
-    width: 40%;
+    width: 60%;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -266,31 +270,33 @@ h1 {
     border: none;
     border-radius: 25px;
     font-size: 16px;
+    margin-bottom: 60px;
     cursor: pointer;
 }
 
 .list {
     list-style: none;
     padding: 0;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list li {
-    align-self: center;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 20px 0;
-    padding: 2px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    margin-left: 305px;
+    width: 100%;
+    max-width: 600px; /* Максимальна ширина для елементів списку */
 }
+
 
 .task-text {
     flex: 1;
@@ -346,7 +352,7 @@ h1 {
 }
 
 .question {
-    margin: 10px 50px;
+    margin: 10px 20px;
     padding: 5px;
     border: 2px solid #000000;
     border-radius: 30px;
